@@ -1,0 +1,269 @@
+ @import url('https://fonts.googleapis.com/css2?family=Alumni+Sans+Pinstripe:ital@0;1&family=Turret+Road:wght@200;300;400;500;700;800&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html,
+        body {
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .container {
+            background-image: url(https://cdn.wallpapersafari.com/47/42/7beylP.jpg);
+            /* background-image: url(https://images4.alphacoders.com/132/1325116.png); */
+
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .heading {
+            color: rgb(205, 82, 7);
+            margin-top: 17px;
+
+        }
+
+        .song {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 35px;
+            padding-top: 20px;
+
+
+        }
+
+        .song-box {
+            background-color: #0000008b;
+            padding-left: 40px;
+            height: 480px;
+            width: 800px;
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+        }
+
+        .cover-audio {
+            background-color: #000000b8;
+            height: 440px;
+            padding: 40px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+
+        }
+
+        .cover-audio:hover {
+            transform: scale(1.01);
+            transition: all 0.5s ease-in-out;
+        }
+
+        #songCover {
+            width: 280px;
+
+            box-shadow: 0 0 10px rgb(255, 255, 255);
+            border-radius: 20px;
+        }
+
+        @keyframes vibrateZoom {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.01);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .vibrate {
+            animation: vibrateZoom 0.8s infinite ease-in-out;
+        }
+
+
+        .about-lyrics-buttons {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            /* background-color: #26062691; */
+            width: 280px;
+            height: 440px;
+            padding: 20px;
+            padding-top: 0px;
+
+        }
+
+        .song-content {
+            /* background-color: #26062691; */
+            height: 70px;
+            width: 300px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            margin-top: 30px;
+
+        }
+
+        .song-name {
+            font-size: 25px;
+            font-weight: 600;
+        }
+
+        .artist {
+            font-style: italic;
+            font-size: 18px;
+            font-weight: 600;
+        }
+
+        .lyrics-button {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 25px;
+        }
+
+        .lyrics {
+            background-color: #24010e83;
+            border-radius: 20px;
+            text-align: center;
+            text-wrap: wrap;
+            min-height: 250px;
+            max-height: 250px;
+            overflow-y: auto;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            font-family: "Alumni Sans Pinstripe", sans-serif;
+            font-size: 19px;
+            font-weight: 700;
+            font-style: oblique;
+            width: 300px;
+        }
+
+
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        .new {
+            background-color: transparent;
+            color: white;
+            border: none;
+            background-color: #04000791;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .new:hover {
+            background-color: #a1999c83;
+        }
+
+        .add {
+            background-color: transparent;
+            color: white;
+            border: none;
+            background-color: #04000791;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .add:hover {
+            background-color: #a1999c83;
+        }
+
+
+
+        .favourite-box {
+            background-color: #b1074b7f;
+            height: 480px;
+            width: 380px;
+            padding: 30px;
+            border-radius: 20px;
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            align-items: center;
+
+        }
+
+        .favourite-box h1 {
+            font-size: 25px;
+        }
+
+        .clear {
+            background-color: transparent;
+            color: white;
+            border: none;
+            background-color: #890638b5;
+            padding: 6px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .clear:hover {
+            background-color: #a795a791;
+        }
+
+        .favorites {
+            height: 290px;
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            margin-top: 10px;
+
+        }
+
+        #favoriteSongs {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+
+
+        }
+
+        #favoriteSongs div {
+            height: fit-content;
+            width: 300px;
+            border-radius: 10px;
+            padding: 5px;
+            background-color: #890638b5;
+            text-wrap: wrap;
+            display: flex;
+            justify-content: space-between;
+            align-content: left;
+            align-items: center;
+            padding-left: 20px;
+            padding-right: 10px;
+        }
+
+        #noFavoritesMessage{
+            font-style: italic;
+            font-weight: 500;
+            width: 300px;
+            height: 100px;
+            text-align: center; 
+            margin-top: 30px;
+            padding: 35px;
+        }

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Song Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="container">
+    <div class="heading">
+        <h1>✨MELODY UNTRACKED✨</h1>
+    </div>
+
+    <div class="song">
+        <div class="song-box">
+
+            <div class="cover-audio">
+                <div class="song-cover">
+                    <img id="songCover" src="https://pagalnew.com/coverimages/Finding-Her-Kushagra-500-500.jpg"
+                        alt="cover" />
+                </div>
+                <div class="audio">
+                    <audio id="songAudio" src="Finding Her Kushagra 320 Kbps.mp3" type="audio/m4a" controls
+                        autoplay></audio>
+                </div>
+
+            </div>
+
+            <div class="about-lyrics-buttons">
+                <div class="song-content">
+                    <div class="song-name" id="songName">Finding Her</div>
+                    <div class="artist" id="artistName">Kushagra</div>
+
+                </div>
+                <div class="lyrics-button">
+                    <div class="lyrics" id="songLyrics"> Tu aata nahin<br>Sapno se jaata nahin<br>Mil jaaye, kya hi baat
+                        thi<br>Qaamil ho jaata wahin<br>Jo bhi ho raaz tera<br>Mujhko bataata nahin<br>Mil jaaye, kya hi
+                        baat thi<br>Qaamil ho jaata wahin
+                    </div>
+
+                    <div class="buttons">
+                        <button class="new" onclick="getSong()">Play Next</button>
+                        <button class="add" onclick="addToFavorites()">Loved It 💖!!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- song box ends -->
+
+        <div class="favourite-box">
+            <h1>Your Favorites💛</h1>
+            <p>Add your favorite songs here:</p>
+            <div class="favorites">
+                <div id="favoriteSongs">
+                    <p id="noFavoritesMessage">No songs added yet 🎵</p>
+                </div>
+            </div>
+            <button class="clear" onclick="clearFavorites()">Clear All Favorites</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
