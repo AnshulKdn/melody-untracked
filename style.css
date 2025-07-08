@@ -267,3 +267,102 @@
             margin-top: 30px;
             padding: 35px;
         }
+        @media (max-width: 1200px) {
+  .song {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .song-box {
+    flex-direction: column;
+    width: 95%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .cover-audio,
+  .about-lyrics-buttons {
+    width: 90%;
+    height: auto;
+  }
+
+  .lyrics {
+    min-height: 180px;
+    max-height: 200px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .song-content {
+    width: 100%;
+    align-items: center;
+  }
+
+  .favourite-box {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  #favoriteSongs div {
+    width: 100%;
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 768px) {
+  .song-name {
+    font-size: 22px;
+  }
+
+  .artist {
+    font-size: 16px;
+  }
+
+  .heading h1 {
+    font-size: 24px;
+    text-align: center;
+    padding: 0 10px;
+  }
+
+  .cover-audio img {
+    width: 80%;
+  }
+
+  .lyrics {
+    font-size: 15px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .song-box {
+    gap: 20px;
+    padding-left: 20px;
+  }
+
+  .cover-audio {
+    padding: 20px;
+  }
+
+  .heading h1 {
+    font-size: 20px;
+  }
+
+  .favourite-box h1 {
+    font-size: 20px;
+  }
+
+  .clear {
+    width: 100%;
+  }
+
+  .lyrics {
+    font-size: 14px;
+    max-height: 150px;
+  }
+}
